@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Until Sans and Serif are split into two repos on https://github.com/notofonts 
-# we have everything in this single repo https://github.com/googlefonts/noto-cjk
+# we have everything in this single repo https://github.com/tjw123hh/noto-cjk-chws
 # This script will make a new release for Sans. To do a Serif release use gh-release-noto-cjk-serif.sh
 # Requires GitHub CLI (https://github.com/cli/cli/releases)
 
 VERSION=2.004
 
-echo "Download individual assets from below or through the download [guide](https://github.com/googlefonts/noto-cjk/tree/main/Sans#downloading-noto-sans-cjk)." > Sans/git-release-notes.md
+echo "Download individual assets from below or through the download [guide](https://github.com/tjw123hh/noto-cjk-chws/tree/main/Sans#downloading-noto-sans-cjk)." > Sans/git-release-notes.md
 
 cd Sans
 zip -r -v 01_NotoSansCJK-OTF-VF.zip Variable/OTF Variable/OTC/NotoSansCJK-VF.otf.ttc LICENSE --exclude "*.zip" "*.DS_Store"

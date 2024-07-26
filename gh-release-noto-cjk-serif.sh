@@ -30,7 +30,7 @@ zip -r -v 16_NotoSerifHK.zip SubsetOTF/HK LICENSE --exclude "*.zip" "*.DS_Store"
 # be created locally first and then we can attach it as a release asset
 cp SuperOTC/NotoSerifCJK.ttc.zip 01_NotoSerifCJK.ttc.zip
 
-gh release create Serif${VERSION} --title "Noto Serif CJK CHWS Version ${VERSION} (OTF, OTC, Super OTC, Subset OTF, Variable OTF/TTF)" -F git-release-notes.md --target main \
+gh release create Serif${VERSION}_CHWS --title "Noto Serif CJK CHWS Version ${VERSION} (OTF, OTC, Super OTC, Subset OTF, Variable OTF/TTF)" -F git-release-notes.md --target main \
         '01_NotoSerifCJK.ttc.zip#Static Super OTC' \
         '02_NotoSerifCJK-OTF-VF.zip#All Variable OTF/OTC' \
         '03_NotoSerifCJK-TTF-VF.zip#All Variable TTF/OTC' \

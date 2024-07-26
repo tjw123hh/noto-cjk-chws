@@ -31,7 +31,7 @@ zip -j -r -v 18_NotoSansSC.zip SubsetOTF/SC LICENSE --exclude "*.zip" "*.DS_Stor
 zip -j -r -v 19_NotoSansTC.zip SubsetOTF/TC LICENSE --exclude "*.zip" "*.DS_Store"
 zip -j -r -v 20_NotoSansHK.zip SubsetOTF/HK LICENSE --exclude "*.zip" "*.DS_Store"
 
-gh release create Sans${VERSION} --title "Noto Sans CJK CHWS Version ${VERSION} (OTF, OTC, Super OTC, Subset OTF, Variable OTF/TTF)" -F git-release-notes.md --target main \
+gh release create Sans${VERSION}_CHWS --title "Noto Sans CJK CHWS Version ${VERSION} (OTF, OTC, Super OTC, Subset OTF, Variable OTF/TTF)" -F git-release-notes.md --target main \
         '01_NotoSansCJK-OTF-VF.zip#All Variable OTF/OTC' \
         '02_NotoSansCJK-TTF-VF.zip#All Variable TTF/OTC' \
         '03_NotoSansCJK-OTC.zip#All Static Language Specific OTCs' \

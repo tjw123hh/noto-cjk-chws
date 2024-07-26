@@ -4,6 +4,8 @@
 
 原仓库虽然有为了符合 Google Fonts 要求而添加 chws/vchw 的字体（`google-fonts` 目录下），但不全。这里没有更改字体名是因为我没有对字体作任何其他更改，它可以完全替代原本的 Noto Sans CJK 字体。
 
+[测试说明](https://github.com/googlefonts/chws_tool#visual-test)
+
 # Noto CJK fonts
 
 Download individual fonts from the download guides for [Noto Sans CJK](https://github.com/googlefonts/noto-cjk/tree/main/Sans#downloading-noto-sans-cjk) or [Noto Serif CJK](https://github.com/googlefonts/noto-cjk/tree/main/Serif#downloading-noto-serif-cjk) or look in [Releases](https://github.com/googlefonts/noto-cjk/releases)

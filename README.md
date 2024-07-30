@@ -3,7 +3,7 @@
 
 使用这些特性可以从字体层面实现标点挤压，如果有自己喜欢的字体也可以用 [chws_tool](https://github.com/googlefonts/chws_tool) 试试。
 
-原仓库虽然有为了符合 Google Fonts 要求而添加 chws/vchw 的字体（`google-fonts` 目录下），但不全。这里没有更改字体名是因为我没有对字体作任何其他更改，它可以完全替代原本的 Noto Sans CJK 字体。Noto CJK 默认支持`halt`与`vhal`（水平/竖直半角标点替代）特性，因此如果软件支持使用此特性“模拟”标点挤压，无需添加`chws`与`vchw`特性，但目前除了专业排版软件外，几乎只有 Chrome 及 Chromium 内核的软件支持。
+原仓库虽然有为了符合 Google Fonts 要求而添加 `chws`/`vchw` 的字体（`google-fonts` 目录下），但不全。这里没有更改字体名是因为我没有对字体作任何其他更改，它可以完全替代原本的 Noto Sans CJK 字体。Noto CJK 默认支持`halt`与`vhal`（水平/竖直半角标点替代）特性，因此如果软件支持使用此特性“模拟”标点挤压，无需添加`chws`与`vchw`特性，但目前除了专业排版软件外，几乎只有 Chrome 及 Chromium 内核的软件支持。
 
 [测试说明](https://github.com/googlefonts/chws_tool#visual-test)
 

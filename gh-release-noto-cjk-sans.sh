@@ -7,8 +7,6 @@
 
 VERSION=2.004
 
-echo "Download individual assets from below or through the download [guide](https://github.com/tjw123hh/noto-cjk-chws/tree/main/Sans#downloading-noto-sans-cjk)." > Sans/git-release-notes.md
-
 cd Sans
 zip -j -r -v 00_NotoSansCJK.ttc.zip SuperOTC/NotoSansCJK.ttc LICENSE --exclude "*.zip" "*.DS_Store"
 zip -r -v 01_NotoSansCJK-OTF-VF.zip Variable/OTF Variable/OTC/NotoSansCJK-VF.otf.ttc Variable/OTC/NotoSansMonoCJK-VF.otf.ttc LICENSE --exclude "*.zip" "*.DS_Store"
@@ -32,9 +30,8 @@ zip -j -r -v 18_NotoSansSC.zip SubsetOTF/SC LICENSE --exclude "*.zip" "*.DS_Stor
 zip -j -r -v 19_NotoSansTC.zip SubsetOTF/TC LICENSE --exclude "*.zip" "*.DS_Store"
 zip -j -r -v 20_NotoSansHK.zip SubsetOTF/HK LICENSE --exclude "*.zip" "*.DS_Store"
 
-gh release create Sans${VERSION}_CHWS --title "Noto Sans CJK CHWS Version ${VERSION} (OTF, OTC, Super OTC, Subset OTF, Variable OTF/TTF)" -F git-release-notes.md --target main \
+gh release create Sans${VERSION}_CHWS --title "Noto Sans CJK CHWS Version ${VERSION} (OTF, OTC, Super OTC, Subset OTF, Variable OTF/TTF)" -n "Download individual assets from below or through the download [guide](https://github.com/tjw123hh/noto-cjk-chws/tree/main/Sans#downloading-noto-sans-cjk)." \
         '00_NotoSansCJK.ttc.zip#Static Super OTC' \
-        '01_NotoSansCJK-OTF-VF.zip#All Variable OTF/OTC' \
         '01_NotoSansCJK-OTF-VF.zip#All Variable OTF/OTC' \
         '02_NotoSansCJK-TTF-VF.zip#All Variable TTF/OTC' \
         '03_NotoSansCJK-OTC.zip#All Static Language Specific OTCs' \
@@ -57,5 +54,4 @@ gh release create Sans${VERSION}_CHWS --title "Noto Sans CJK CHWS Version ${VERS
         '20_NotoSansHK.zip#Region Specific Subset OTFs Traditional Chinese — Hong Kong (繁體中文—香港)'
 
 rm *.zip
-rm git-release-notes.md
 cd ..

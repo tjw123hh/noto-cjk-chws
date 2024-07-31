@@ -7,8 +7,6 @@
 
 VERSION=2.003
 
-echo "Download individual assets from below or through the download [guide](https://github.com/tjw123hh/noto-cjk-chws/tree/main/Serif#downloading-noto-serif-cjk)." > Serif/git-release-notes.md
-
 cd Serif
 zip -r -v 02_NotoSerifCJK-OTF-VF.zip Variable/OTF Variable/OTC/NotoSerifCJK-VF.otf.ttc LICENSE --exclude "*.zip" "*.DS_Store"
 zip -r -v 03_NotoSerifCJK-TTF-VF.zip Variable/TTF Variable/OTC/NotoSerifCJK-VF.ttf.ttc LICENSE --exclude "*.zip" "*.DS_Store"
@@ -30,7 +28,7 @@ zip -r -v 16_NotoSerifHK.zip SubsetOTF/HK LICENSE --exclude "*.zip" "*.DS_Store"
 # be created locally first and then we can attach it as a release asset
 cp SuperOTC/NotoSerifCJK.ttc.zip 01_NotoSerifCJK.ttc.zip
 
-gh release create Serif${VERSION}_CHWS --title "Noto Serif CJK CHWS Version ${VERSION} (OTF, OTC, Super OTC, Subset OTF, Variable OTF/TTF)" -F git-release-notes.md --target main \
+gh release create Serif${VERSION}_CHWS --title "Noto Serif CJK CHWS Version ${VERSION} (OTF, OTC, Super OTC, Subset OTF, Variable OTF/TTF)" -n "Download individual assets from below or through the download [guide](https://github.com/tjw123hh/noto-cjk-chws/tree/main/Serif#downloading-noto-serif-cjk)." \
         '01_NotoSerifCJK.ttc.zip#Static Super OTC' \
         '02_NotoSerifCJK-OTF-VF.zip#All Variable OTF/OTC' \
         '03_NotoSerifCJK-TTF-VF.zip#All Variable TTF/OTC' \
@@ -49,5 +47,4 @@ gh release create Serif${VERSION}_CHWS --title "Noto Serif CJK CHWS Version ${VE
         '16_NotoSerifHK.zip#Region Specific Subset OTFs Traditional Chinese — Hong Kong (繁體中文—香港)'
 
 rm *.zip
-rm git-release-notes.md
 cd ..

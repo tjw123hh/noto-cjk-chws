@@ -1,5 +1,7 @@
 # noto-cjk-chws
+
 <div lang="zh-CN">
+
 使用 [chws_tool](https://github.com/googlefonts/chws_tool) 添加了 OpenType `chws`与`vchw` 特性（水平/竖直标点挤压）的 Noto CJK 字体。可通过 AUR 包`noto-fonts-cjk-chws`直接在 Arch Linux 上安装。
 
 使用这些特性可以从字体层面实现标点挤压，如果有自己喜欢的字体也可以用 [chws_tool](https://github.com/googlefonts/chws_tool) 试试。
@@ -37,7 +39,9 @@
 ```
 
 如果需要更快、更小的下载，或是更改英文字形而不影响中文标点显示，可以尝试[`noto-cjk-chws-patch`](https://github.com/tjw123hh/noto-cjk-chws-patch)，但需要更多 fontconfig 配置且需要软件完整支持。
+
 </div>
+
 # Noto CJK fonts
 
 Download individual fonts from the download guides for [Noto Sans CJK](https://github.com/googlefonts/noto-cjk/tree/main/Sans#downloading-noto-sans-cjk) or [Noto Serif CJK](https://github.com/googlefonts/noto-cjk/tree/main/Serif#downloading-noto-serif-cjk) or look in [Releases](https://github.com/googlefonts/noto-cjk/releases)
